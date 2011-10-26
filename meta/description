@@ -1,0 +1,2 @@
+Yardstick plugin for Detroit build system. This plugin generates a documentation 
+coverage report for YARD documentation during the post-document phase.
