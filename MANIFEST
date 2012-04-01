@@ -1,9 +1,7 @@
 #!mast .ruby bin lib man qed test [A-Z]*.*
 .ruby
 lib/detroit-yardstick.rb
-man/detroit-vclog.5
-man/detroit-vclog.5.html
-man/detroit-vclog.5.ronn
+man/detroit-yardstick.5.ronn
+LICENSE.txt
 README.rdoc
-GPL3.txt
 COPYING.rdoc
