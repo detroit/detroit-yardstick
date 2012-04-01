@@ -7,6 +7,8 @@ module Detroit
     Yardstick.new(options)
   end
 
+  # TODO: Switch to analyze station if detroit moves it after document.
+
   # Yardstick service.
   #
   class Yardstick < Tool
@@ -65,11 +67,25 @@ module Detroit
       ::Yardstick.measure(path).puts($stdout)
     end
 
+    #  A S S E M B L Y  M E T H O D S
+
     # Detroit station for yardstick measure is post-document.
     #
     # @api public
-    def station_post_document
-      save
+    def assemble?(station, options={})
+      case station
+      when :post_document then true
+      end
+    end
+
+    # Detroit station for yardstick measure is post-document.
+    #
+    # @api public
+    def assemble(station, options={})
+      case station
+      when :post_document
+        save
+      end
     end
 
     # Path to to man-page document.
