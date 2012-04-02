@@ -1,0 +1,30 @@
+---
+gem:
+  active: true
+
+qedoc:
+  active: false
+  files : qed/
+  title : Detroit
+  output: QED.rdoc
+
+yard:
+  priority : 1
+
+dnote:
+  title : Source Notes
+  output: log/notes.html
+
+locat:
+  active: false
+
+github:
+  folder: web
+
+announce:
+  service: email
+  mailto : 
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+    - transfire@gmail.com
+
