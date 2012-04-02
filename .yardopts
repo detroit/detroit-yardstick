@@ -1,9 +1,5 @@
---title "Detroit Yardstick"
 --readme README.rdoc
 --output-dir doc
---protected
---private
-lib/**/*.rb
+lib/*.rb
 -
 [A-Z]*.*
-

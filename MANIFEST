@@ -1,5 +1,6 @@
-#!mast .ruby bin lib man qed test [A-Z]*.*
+#!mast .ruby .yardopts bin lib man qed test [A-Z]*.*
 .ruby
+.yardopts
 lib/detroit-yardstick.rb
 man/detroit-yardstick.5.ronn
 LICENSE.txt
