@@ -1,4 +1,4 @@
-require 'detroit/tool'
+require 'detroit-standard'
 
 module Detroit
 
@@ -9,9 +9,13 @@ module Detroit
 
   # TODO: Switch to analyze station if detroit moves it after document.
 
+  ##
   # Yardstick service.
   #
   class Yardstick < Tool
+
+    # Standard toolchain.
+    system :standard
 
     # List of paths to measure
     #
