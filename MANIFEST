@@ -1,8 +1,8 @@
-#!mast .ruby .yardopts bin lib man qed test [A-Z]*.*
-.ruby
+#!mast .index .yardopts bin demo lib man test *.md *.txt
+.index
 .yardopts
 lib/detroit-yardstick.rb
 man/detroit-yardstick.5.ronn
-LICENSE.txt
-README.rdoc
-COPYING.rdoc
+COPYING.md
+HISTORY.md
+README.md

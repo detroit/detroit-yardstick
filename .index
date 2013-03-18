@@ -1,0 +1,52 @@
+---
+revision: 2013
+type: ruby
+sources:
+- var
+authors:
+- name: T. Sawyer
+  email: transfire@gmail.com
+organizations:
+- name: Rubyworks
+requirements:
+- version: 0.3.0+
+  name: detroit
+- name: yardstick
+conflicts: []
+alternatives: []
+resources:
+- type: home
+  uri: http://detroit.github.com/
+  label: Homepage
+- type: code
+  uri: http://github.com/detroit/detroit-yardstick
+  label: Source Code
+- type: bugs
+  uri: http://github.com/detroit/detroit-yardstick/issues
+  label: Issue Tracker
+- type: mail
+  uri: http://groups.google.com/group/rubyworks-mailinglist
+  label: Mailing List
+repositories:
+- name: upstream
+  scm: git
+  uri: git://github.com/rubyworks/detroit-yardstick.git
+categories: []
+copyrights:
+- holder: Thomas Sawyer
+  year: '2011'
+  license: GPL-3
+customs: []
+paths:
+  lib:
+  - lib
+created: '2011-10-16'
+summary: Yardstick plugin for Detroit
+title: Detroit Yardstick
+version: 0.2.0
+name: detroit-yardstick
+suite: detroit
+description: ! "Yardstick plugin for Detroit build system. This plugin generates a
+  documentation \ncoverage report for YARD documentation during the post-document
+  phase."
+date: '2013-03-18'
