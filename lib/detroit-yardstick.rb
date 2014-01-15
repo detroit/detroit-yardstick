@@ -1,4 +1,4 @@
-require 'detroit'
+require 'detroit-standard'
 
 module Detroit
 

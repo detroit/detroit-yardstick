@@ -13,6 +13,10 @@ requirements:
   name: detroit
 - name: detroit-standard
 - name: yardstick
+- groups:
+  - test
+  development: true
+  name: qed
 conflicts: []
 alternatives: []
 resources:
