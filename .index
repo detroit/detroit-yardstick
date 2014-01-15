@@ -9,8 +9,9 @@ authors:
 organizations:
 - name: Rubyworks
 requirements:
-- version: 0.3.0+
+- version: 0.4.0+
   name: detroit
+- name: detroit-standard
 - name: yardstick
 conflicts: []
 alternatives: []
@@ -33,20 +34,19 @@ repositories:
   uri: git://github.com/rubyworks/detroit-yardstick.git
 categories: []
 copyrights:
-- holder: Thomas Sawyer
+- holder: Rubyworks
   year: '2011'
-  license: GPL-3
+  license: GPL-3.0
 customs: []
 paths:
   lib:
   - lib
-created: '2011-10-16'
-summary: Yardstick plugin for Detroit
-title: Detroit Yardstick
-version: 0.2.0
 name: detroit-yardstick
+title: Detroit Yardstick
+summary: Yardstick plugin for Detroit
+created: '2011-10-16'
+description: "Yardstick plugin for Detroit build system. This plugin generates a documentation
+  \ncoverage report for YARD documentation during the post-document phase."
 suite: detroit
-description: ! "Yardstick plugin for Detroit build system. This plugin generates a
-  documentation \ncoverage report for YARD documentation during the post-document
-  phase."
-date: '2013-03-18'
+version: 0.4.0
+date: '2014-01-15'

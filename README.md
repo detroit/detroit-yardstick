@@ -2,7 +2,7 @@
 
 [Website](http://rubyworks.github.com/detroit-yardstick) /
 [Report Issue](http://github.com/rubyworks/detroit-yardstick/issues) /
-[Repository](http://github.com/rubyworks/detroit-yardstick)
+[Development](http://github.com/rubyworks/detroit-yardstick)
 
 [![Build Status](https://secure.travis-ci.org/rubyworks/detroit-yardstick.png)](http://travis-ci.org/rubyworks/detroit-yardstick) 
 [![Gem Version](https://badge.fury.io/rb/detroit-yardstick.png)](http://badge.fury.io/rb/detroit-yardstick) &nbsp; &nbsp;
@@ -27,8 +27,6 @@ Yardstick gem. This occurs `post-document` on the standard assembly.
 Detroit Yardstick
 
 Copyright (c) 2011 Rubyworks
-
-GPL-3.0 License
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

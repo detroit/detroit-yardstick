@@ -1,93 +1,68 @@
-detroit-vclog(5) - generate changelogs using vclog for detroit
-==============================================================
+detroit-yardstick(5) - documentation coverage plugin for detroit
+================================================================
 
 ## DESCRIPTION
 
-The VCLog plug-in for Detroit utilize the `vclog` command line tool
-to generate nicely formatted changelogs and/or history documents.
+This is a Yardstick plugin for Detroit. Yardstick is a tool
+that verifies documentation coverage of Ruby code. It will
+measure the source and provide feedback on what is missing
+from the documentation and what can be improved. 
+
+This plugin links into the post-document stage of the standard
+assembly.
 
 
 ## OPTIONS
 
-The following options can be used in the Detroit assembly file
-for defining a vclog service.
+The following options can be used in the Detroit toolchain file
+for defining a yardstick tool instance.
 
-  * `output` - Output is either a file name with a clear extension to infer
-    the file format, or a list of such file names, or a hash mapping file name
-    to file format. Recognized formats include `html`, `xml`, `atom`, `rss`,
-    `json`, `yaml`, `rdoc`, `markdown` and `md`, `ansi`, `gnu` and `txt`.
-    See EXAMPLES below.
+  * `output` - The path to the file where the measurements will be
+    written. Default is the typical `lib/**/*.rb`.
 
-  * `level` - Minimum change level to include. VCLog categorizes commits
-     by level. This setting filters commits with a level lower than the
-     figure given.
+  * `path` - Path or list of paths to measure. Defaults to the 
+    project's log directory, e.g. `log/`, in a `yardstick.txt` file.
 
-  * `rev` - Show revision numbers. Default is `false`.
+  * `threshold` - Defaults to the maximum 100.
 
-  * `summary` - Show reduced detail. Default is `false`.
+  * `exact` - Whether the threshold must be exact.
 
-  * `title` - Some formats, such as +rdoc+, use a title field.
-     Defaults to project title from project metadata.
-
-  * `version` - The current version of the project. The default is extracted
-    from project metadata.
-
-  * `type` - Changelog layout type can be either `changelog` or `history`.
-     If type is not given explicitly it will be inferred from the name of
-     the output file. Otherwise if defaults to +changelog+. 
-
-  * `style` - Use external stylesheet. Some formats, namely `xml` and `html`,
-    can use a stylesheet. Give the location of this file relative to the output.
+  * `rules` - Yardstick's measure rules can be customized individually.
+    with this option. See https://github.com/dkubb/yardstick for detials.
 
 
 ## Examples:
 
 The simplest entry is
 
-    vclog:
-      output: HISTORY.rdoc
+    yardstick:
+      active: true
 
-To produce multiple formats use a list.
+A fuller example might look something like this
 
-    vclog:
-      output:
-        - log/CHANGES.md
-        - log/HISTORY.md
-
-If the extension is atypical use a mapping.
-
-     vclog:
-       output:
-         HISTORY: markdown
-         site/history.html: html
-
-A fuller example might look something like this.
-
-     vclog:
-       rev: true
-       level: -2
-       output:
-         - HISTORY.rdoc
-         - CHANGELOG.rdoc
-         - site/HISTORY.html
+     yardstick:
+       output: log/measurement.txt
+       path:
+         - lib/**/*.rb
 
 
 ## RESOURCES
 
 For more information:
 
-  * [API Documentation](http://rubydoc.info/gems/detroit-vclog)
+  * [API Documentation](http://rubydoc.info/gems/detroit-yardstick)
 
-  * [Development Site](http://github.com/detroit/detroit-vclog)
+  * [Development Site](http://github.com/detroit/detroit-yardstick)
 
 
 ## COPYRIGHT
 
-Copyright (c) 2010 Thomas Sawyer, Rubyworks
+Copyright (c) 2010 Rubyworks
 
-Detroit VCLog is distributable in accordance with the GPL v.3 license.
+Detroit Yardstick is distributable in accordance with the GPL v3 license.
 
 
 ## SEE ALSO
 
-detroit(1), vclog(1)
+detroit(1), yardstick(1)
+
