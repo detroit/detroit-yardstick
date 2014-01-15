@@ -1,6 +1,7 @@
 #!mast .index .yardopts bin demo lib man test spec *.md *.txt
 .index
 .yardopts
+demo/detroit-yardstick.md
 lib/detroit-yardstick.rb
 man/detroit-yardstick.5
 man/detroit-yardstick.5.html
