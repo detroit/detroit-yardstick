@@ -79,7 +79,7 @@ module Detroit
     #
     # @return [undefined]
     def print
-      ::Yardstick.measure(path).puts($stdout)
+      ::Yardstick.measure(yard_config).puts($stdout)
     end
 
     # This tool ties into the `post_document` station of the standard assembly.
