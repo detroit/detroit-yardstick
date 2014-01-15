@@ -52,5 +52,5 @@ created: '2011-10-16'
 description: "Yardstick plugin for Detroit build system. This plugin generates a documentation
   \ncoverage report for YARD documentation during the post-document phase."
 suite: detroit
-version: 0.4.0
+version: 0.4.1
 date: '2014-01-15'
